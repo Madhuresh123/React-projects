@@ -10,8 +10,7 @@ function TaskItem({tasks, setTasks}) {
 
     }
 
-    const handleCheckbox = (id) => {
-        
+    const handleCheckbox = (id) => {    
         setTasks((element) => 
         element.map((item) => item.id === id ? {...item, isChecked: !item.isChecked } : item
         ))
